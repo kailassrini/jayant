@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: linear-gradient(to right, #0b2452,#ddcc99);
+}
+
+.main{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(to right, #0b2452,#ddcc99);
+
+}
+nav{
+    width: 100%;
+    height: 8vh;
+    position:fixed;
+    /* margin: 20px auto; */
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: #0b2452;
+}
+/* .logo{
+    flex-basis: 20%;
+} */
+.logo img{
+    width: 35rem;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+}
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+
+}
+.nav-link:hover {
+    color:#ddcc99;
+    transition: 200ms;
+}
+
+.information{
+    width: 1000px;
+    height: 1000px;
+    position: absolute;
+    top: 50%;
+    left: -10%;
+    transform: translateY(-50%);
+    
+}
+#circle{
+    width: 1000px;
+    height: 1000px;
+    position: absolute;
+    top: 0;
+    left: 0%;
+    border-radius: 50%;
+    /* background: #ccc; */
+    transform: rotate(0deg);
+    transition: 1s;
+}
+
+.feature img{
+    width: 70px;
+}
+
+.feature{
+    position: absolute;
+    display: flex;
+    color: #fff;
+
+}
+.feature div{
+    margin-left: 10px;
+
+}
+.feature div p{
+    margin-top: 8px;
+}
+.one{
+    top: 450px;
+    right: 50px;
+}
+.two{
+    top: 135px;
+    left: 325px;
+    transform: rotate(-90deg);
+}
+.three{
+    bottom: 450px;
+    left: 50px;
+    transform: rotate(-180deg);
+}
+.four{
+    top: 800px;
+    left: 400px;
+    transform: rotate(-270deg);
+}
+
+.circle-icons{
+    filter: brightness(0) invert(1);
+}
+.link-titles{
+    display: block;
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+.link-description{
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+
+.jayant{
+    width: 200px;
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+.controls{
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%); 
+
+}
+.controls h3{
+    margin: 15px 0;
+    color: #fff;
+}
+#upBtn{
+    width: 15px;
+    cursor: pointer;
+}
+#downBtn{
+    width: 15px;
+    cursor: pointer;
+    transform: rotate(180deg);
+}
+.overlay{
+    width: 0;
+    height: 0;
+    border-top: 500px solid #fff;
+    border-right: 500px solid transparent;
+    border-bottom: 500px solid rgb(255, 255, 255);
+    border-left: 500px solid rgb(255, 255, 255);
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.about-me {
+    height: 100vh;
+    background: white;
+    color: black;
+    padding-top: 16vh;
+    font-family: 'Poppins', sans-serif;
+}   
+.section{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #ddd;
+}
+.container{
+    width: 80%;
+    display: block;
+    margin: auto;
+    padding-top: 100px;
+}
+.content-section{
+    float: left;
+    width: 55%;
+}
+.image-section{
+    float: right;
+    width: 40%;
+}
+.image-section img{
+    width: 100%;
+    height: auto;
+}
+.content-section .title{
+    text-transform: uppercase;
+    font-size: 28px;
+}
+.content-section .content h3{
+    margin-top: 5px;
+    color: #5d5d5d;
+    font-size: 18px;
+}
+.content-section .content p{
+    margin-top: 10px;
+    font-family: sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+.content-section .content .button{
+    margin-top: 30px;
+}
+.content-section .content .button a{
+    background-color: #3d3d3d;
+    padding: 12px 40px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 25px;
+    letter-spacing: 1.5px;
+}
+.content-section .content .button a:hover{
+    background-color: #0b2452;
+    color: #fff;
+    transition: 200ms;
+}
+.social{
+    margin: 20px;
+    color:#3d3d3d;
+    font-size: 30px;
+    padding: 0px 10px;  
+} 
+.content-section .social:hover{
+    color: #0b2452;
+}
+@media screen and (max-width: 768px){
+    .container{
+        width: 80%;
+        display: block;
+        margin: auto;
+        padding-top: 50px;
+    }
+    .content-section{
+        float: none;
+        width: 100%;
+        display: block;
+        margin: auto;
+        
+    }
+    .image-section{
+        float: none;
+        width: 100%;
+        display: block;
+        margin: auto;
+    }
+    .content-section .title{
+        text-align: center;
+        font-size: 19px; 
+    }
+    .content-section .content .button{
+        text-align: center;
+    }
+    .content-section .content .button a{
+        padding: 9px 30px; 
+    }
+    .content-section .social{
+        text-align: center;
+    }
+}
